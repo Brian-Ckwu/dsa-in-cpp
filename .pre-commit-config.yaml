@@ -8,6 +8,11 @@ repos:
     -   id: end-of-file-fixer
     -   id: check-yaml
     -   id: check-added-large-files
+-   repo: https://gitlab.com/daverona/pre-commit/cpp
+    rev: 0.8.0
+    hooks:
+    -   id: clang-format
+        args: ["-style=Google"]
 -   repo: https://github.com/cpplint/cpplint
     rev: master
     hooks:
