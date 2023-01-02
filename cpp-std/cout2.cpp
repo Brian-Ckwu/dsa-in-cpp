@@ -1,6 +1,6 @@
 /**
  * C++ program for a simple "Hello, world!" with `using`.
- * 
+ *
  * @author
  *   Wade Fagen-Ulmschneider <waf@illinois.edu>
  */
