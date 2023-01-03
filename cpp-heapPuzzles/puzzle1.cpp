@@ -4,8 +4,12 @@ using std::cout;
 using std::endl;
 
 int main() {
-  int  i =  2,  j =  4,  k =  8;
+  int i = 2, j = 4, k = 8;
   int *p = &i, *q = &j, *r = &k;
+
+  cout << p << endl;
+  cout << q << endl;
+  cout << r << endl;
 
   k = i;
   cout << i << j << k << *p << *q << *r << endl;
