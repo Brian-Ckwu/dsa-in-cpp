@@ -15,11 +15,11 @@ class Game {
  public:
   Game();
   void solve();
-  void move(int num, int from, int to);
 
   // An overloaded operator<<, allowing us to print the stack via `cout<<`:
   friend std::ostream& operator<<(std::ostream& os, const Game& game);
 
  private:
+  void _move(int num, int from, int to);
   std::vector<Stack> stacks_;
 };

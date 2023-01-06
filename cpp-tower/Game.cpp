@@ -19,21 +19,21 @@ using std::endl;
 // (Feel free to call "helper functions" to help you solve the puzzle.)
 void Game::solve() {
   // Prints out the state of the game:
-  move(4, 0, 1);
+  _move(4, 0, 1);
 
   // @TODO -- Finish solving the game!
 }
 
-void Game::move(int num, int from, int to) {
+void Game::_move(int num, int from, int to) {
   if (num == 1) {
     Cube top_cube = stacks_[from].removeTop();
     stacks_[to].push_back(top_cube);
     cout << *this << endl;
     return;
   }
-  move(num - 1, from, 3 - from - to);
-  move(1, from, to);
-  move(num - 1, 3 - from - to, to);
+  _move(num - 1, from, 3 - from - to);
+  _move(1, from, to);
+  _move(num - 1, 3 - from - to, to);
 }
 
 // Default constructor to create the initial state:
